@@ -1,0 +1,456 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+#home,#about,#menu,#project,#contact{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: orange;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: .9;
+}
+header .headerlogo a{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+header .headerlinks ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+header .headerlinks li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    font-weight: 250;
+    cursor: pointer;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 5px;
+    
+}
+header .headerlinks li a:hover{
+    opacity: .5;
+    color: white;
+    background-color: red;
+}
+header .headertoggle i{
+    display: none;
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: orange;
+}
+nav .home-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav .home-menu h3{
+    font-size: 3.5em;
+    font-weight: 600;
+}
+nav .home-menu p{
+    font-size: 1.5em;
+    font-weight: 250;
+}
+nav .home-menu button{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .home-menu button:hover{
+    opacity: 0.5;
+    background-color: white;
+    color: black;
+}
+
+main{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+main .header-menu{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+main .header-menu span{
+    color: red;
+}
+main .grids-menu{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px;
+}
+main .grid-content{
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main .grid-content:hover{
+    opacity: .5;
+    background-color: red;
+    color: white;
+}
+main .grid-content i{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+main .grid-content h3{
+    font-size: 2em;
+    font-weight: 700;
+}
+main .grid-content p{
+    font-size: 1em;
+    font-weight: 150;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+aside .about-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+aside .about-content .about-content-img {
+    width: 50%;
+    height: 250px;
+    border: 1px solid black;
+}
+aside .about-content .about-content-img img{
+    display: inline-block;
+    width: 100%;
+}
+aside .about-content .about-content-teks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+aside .about-content .about-content-teks h3{
+    font-size: 2.5em;
+    font-weight: 700;
+    border-bottom: 1px solid red;
+}
+aside .about-content .about-content-teks h3 span{
+    color: red;
+}
+aside .about-content .about-content-teks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+aside .about-content .about-content-teks li{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+aside .about-content .about-content-teks li span{
+    font-weight: 250;
+    text-transform: capitalize;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: orange;
+}
+.project .project-header{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.project .project-header span{
+    color: red;
+}
+.project .grids-project{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px;
+}
+.project .grids-project .grid-content-project{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.project .grids-project .grid-content-project:hover{
+    opacity: .5;
+    background-color: red;
+    color: white;
+}
+.project .grids-project .grid-content-project img{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+}
+.project .grids-project .grid-content-project h3{
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.project .grids-project .grid-content-project p{
+    font-size: 1em;
+    font-weight: 250;
+}
+.contact{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contact .contact-flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:20px;
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-flex .contact-content-one form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+}
+.contact .contact-flex .contact-content-one form .col-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact .contact-flex .contact-content-one form .col-flex label{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.contact .contact-flex .contact-content-one form .col-flex input{
+    opacity: 0.5;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    border-radius:5px;
+}
+.contact .contact-flex .contact-content-one form .col-flex textarea{
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    border-radius:5px;
+}
+
+.contact .contact-flex .contact-content-two img{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+}
+.contact .contact-flex .contact-content-one .col-btn:nth-child(5){
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .contact-flex .contact-content-one .col-btn button{
+    display: inline-block;
+    width: 75px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact .contact-flex .contact-content-one .col-btn button:hover{
+    opacity: 0.5;
+    background-color: white;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+footer .footer-content h3{
+    font-size: 2.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+footer .footer-content b{
+    font-size: 1.25em;
+}
+footer .footer-content p{
+    font-size: .7em;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    #home,#about,#menu,#project,#contact{
+        width: 100%;
+        height: 100%;
+    }
+    .contact-content-one form input{
+        display: inline-block;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    header .headerlinks{
+        display: none;
+    }
+   header .headerlogo a{
+        font-size: 1.5em;
+       
+    }
+    header .headertoggle i:hover{
+        opacity: .5;
+    }
+    header .headertoggle i{
+        display: flex;
+        font-size: 1.5em; 
+        cursor: pointer;
+    }
+    nav{
+        margin-top: 50px;
+    }
+    nav .home-menu h3{
+        font-size: 2.5em;
+    }
+    nav .home-menu p{
+        font-size: 1em;
+    }
+    main .header-menu{
+        font-size: 1.5em;
+    }
+    main .grid-content h3{
+        font-size: 1.5em;
+    }
+    main .grid-content p{
+        font-size: 1em;
+    }
+    aside .about-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px 0;
+    }
+    aside .about-content .about-content-teks h3{
+        font-size: 2em;
+    }
+    aside .about-content .about-content-teks li{
+        font-size: 1.25em;
+    }
+    .project .project-header{
+        font-size: 2em;
+    }
+    .contact .contact-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer .footer-content h3{
+        font-size: 2em;
+    }
+    footer .footer-content b{
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }   
+}
+@media only screen and (min-width: 768px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }   
+}
+
+.click-toggle{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 25% 50%;
+}
+.blue{
+    background-color: blue;
+}
